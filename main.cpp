@@ -3,7 +3,7 @@ Lab8?
 macedo22@ucla.edu
 
 This main function creates a Pet pointer to a Snake object and
-the Snake object sneks. Also, A Table object is created 
+the Snake object sneks. Also, A Table object is created
 and books, a lamp, and a tissue box are added onto the table.
 Lastly, a Cat object is is created and knocks all this shit
 off of the Table so that no iteams remain on top.*/
@@ -15,11 +15,14 @@ off of the Table so that no iteams remain on top.*/
 using namespace std;
 
 int main(){
-	Pet* snake = new Pet();
+	//Pet* snake = new Pet();
 
-	static_cast<Snake*>(snake)->snek();//Pet object snake is converted to a Snake object and sneks
+	//static_cast<Snake*>(snake)->snek();//Pet object snake is converted to a Snake object and sneks
 
 	//A Table and its Books, Lamp, and TissueBox are created
+
+	Pet* snake = new Snake();
+	(*snake).action();
 
 	Table table;
 	Table* tablePtr=&table;
@@ -51,7 +54,7 @@ int main(){
 	//Cat knocks all the current shit off the table
 
 	Cat cat;
-	cat.knock_shit_off_table(tablePtr);
+	cat.action();//can't knock shit off the table anymore
 
 	//Prints and confirms the lack of shit on the table
 
@@ -60,7 +63,7 @@ int main(){
 	cout << "Number of lamps: " << table.getNumberOfLamps() << endl;
 	cout << "Number of tissue boxes: " << table.getNumberOfTissueBoxes() << endl;
 
-	
+
 
 	return 0;
 }

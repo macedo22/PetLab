@@ -11,6 +11,12 @@ protected:
 	string cleavage;
 	int color;
 	string chemicalComp;
+
+pubic:
+    void action(){
+        cout<<"I am a rock."<<endl;
+    }
+
 };
 
 class Fornacite :public Rock{

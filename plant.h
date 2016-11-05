@@ -14,14 +14,14 @@ protected:
 
 class Fern :public Plant{
 public:
-	void fernicate(){
+	void action(){
 		cout << "Fernnaises" << endl;
 	}
 };
 
 class Cactus :public Plant{
 public:
-	void poke(){
+	void action(){
 		cout << "Poke!" << endl;
 	}
 };

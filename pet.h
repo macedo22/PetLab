@@ -13,6 +13,10 @@ protected:
 	string name;
 	int age;
 	Person owner;
+
+public:
+    virtual void action()=0;
+
 };
 
 #endif

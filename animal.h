@@ -17,24 +17,28 @@ class Cat : public Animal{
 public:
 
 	//removes all current objects on a Table; friend function from the Table class
-	void knock_shit_off_table(Table* tablePtr){
-	
+	/*void knock_shit_off_table(Table* tablePtr){
+
 		removeAllItems(tablePtr);
 
 		cout << "Maintain eye contact. Assert dominance." << endl;
+	}*/
+
+	void action(){
+	    cout<<"The cat can no longer knock shit off the table :("<<endl;
 	}
 };
 
 class Dog : public Animal{
 public:
-	void eat_poop(){
+	void action(){
 		cout << "Yum!" << endl;
 	}
 };
 
 class Snake : public Animal{
 public:
-	void snek(){
+	void action(){
 		cout << "snek snek snek" << endl;
 	}
 };
